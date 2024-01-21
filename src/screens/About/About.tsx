@@ -1,7 +1,9 @@
+import { ScreenContainer } from "../../components";
+
 export const About = () => {
   return (
-    <div>
+    <ScreenContainer>
       <h1>About</h1>
-    </div>
+    </ScreenContainer>
   );
 };

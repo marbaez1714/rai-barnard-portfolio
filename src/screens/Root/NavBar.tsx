@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <nav className="pt-8 absolute w-full">
+    <nav className="pt-8 w-full absolute z-50">
       <div className="flex flex-col items-center gap-2 py-2">
         <Link to="/" className="nav-header">
           Rai Barnard Design

@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         fugaz: ['"Fugaz One"', "sans-serif"],
       },
+      maxWidth: {
+        app: "1280px",
+      },
     },
   },
   plugins: [],

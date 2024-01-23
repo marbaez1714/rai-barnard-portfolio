@@ -50,6 +50,14 @@
     animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
 
+  .footer-background {
+    @apply absolute top-0 bottom-0 left-0 right-20 rounded-r-full;
+    background: linear-gradient(180deg, #fff 0%, #c4c4c4 100%);
+    box-shadow: 0px 99.667px 199.333px 0px rgba(48, 48, 48, 0.3),
+      0px 34.551px 34.551px 0px #fff inset,
+      0px -34.551px 34.551px 0px #b8b8b8 inset;
+  }
+
   @keyframes fade-in {
     0% {
       opacity: 0;

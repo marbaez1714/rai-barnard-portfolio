@@ -3,7 +3,7 @@ import { LinkButton, ScreenContainer } from "../../components";
 export const Landing = () => {
   return (
     <ScreenContainer className="px-40" headerPadding={false}>
-      <div className="h-full mx-auto flex z-40 max-w-screen-xl relative">
+      <div className="h-full mx-auto flex z-40 max-w-app relative">
         {/* Left half */}
         <div className="flex flex-col w-1/2 justify-center gap-12">
           <h1 className="font-fugaz text-5xl">Hi there, I'm Rai!</h1>

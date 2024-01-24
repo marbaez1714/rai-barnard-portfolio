@@ -15,47 +15,63 @@
   }
 }
 
-@layer components {
-  .nav-header {
-    @apply text-dark-green font-fugaz;
-    font-size: 4rem;
-    text-shadow: 0px 4px 4px rgba(109, 108, 108, 0.7);
+@layer utilities {
+  .preserve-3d {
+    transform-style: preserve-3d;
   }
 
-  .link-button-background {
-    @apply px-12 py-4 text-2xl w-auto rounded-2xl;
-    background: linear-gradient(180deg, #81f7cc 0%, #5fb697 100%);
-    box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.26),
-      0px 7.647px 7.647px 0px #86ffd4 inset,
-      0px -7.647px 7.647px 0px #5aac8f inset;
+  .translate-back {
+    transform: translateZ(-10px);
   }
 
-  .link-button-background:hover {
-    background: linear-gradient(180deg, #60b898 0%, #80f5cb 100%);
-    box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.24),
-      0px 7.384px 7.384px 0px #85fed2 inset,
-      0px -7.384px 7.384px 0px #5caf91 inset;
+  .gradient-dark-grey {
+    background: linear-gradient(180deg, #c0bebe 0%, #858484 100%);
+    box-shadow: 0px 11.482px 11.482px 0px #d2d1d1 inset,
+      0px -11.482px 11.482px 0px #7b7a7a inset;
   }
 
-  .landing-page-semicircle {
-    @apply rounded-t-full;
-    aspect-ratio: 2;
-    width: 40%;
+  .gradient-semi-circle {
     background: linear-gradient(180deg, #c6c5c5 0%, #878787 100%);
     box-shadow: 0px 26.4px 52.8px 0px rgba(34, 34, 34, 0.33),
       0px 9.68px 9.68px 0px #cfcece inset, 0px -9.68px 9.68px 0px #7e7e7e inset;
   }
 
-  .fade-in {
-    animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-
-  .footer-background {
-    @apply absolute top-0 bottom-0 left-0 right-20 rounded-r-full;
+  .gradient-footer {
     background: linear-gradient(180deg, #fff 0%, #c4c4c4 100%);
     box-shadow: 0px 99.667px 199.333px 0px rgba(48, 48, 48, 0.3),
       0px 34.551px 34.551px 0px #fff inset,
       0px -34.551px 34.551px 0px #b8b8b8 inset;
+  }
+
+  .gradient-green {
+    background: linear-gradient(
+      180deg,
+      rgba(60, 150, 117, 0.9) 0%,
+      rgba(36, 91, 71, 0.9) 100%
+    );
+    box-shadow: 0px 13.009px 13.009px 0px #409e7c inset,
+      0px -13.009px 13.009px 0px #215240 inset;
+  }
+
+  .gradient-link {
+    background: linear-gradient(180deg, #81f7cc 0%, #5fb697 100%);
+    box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.26),
+      0px 7.647px 7.647px 0px #86ffd4 inset,
+      0px -7.647px 7.647px 0px #5aac8f inset;
+    &:hover {
+      background: linear-gradient(180deg, #60b898 0%, #80f5cb 100%);
+      box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.24),
+        0px 7.384px 7.384px 0px #85fed2 inset,
+        0px -7.384px 7.384px 0px #5caf91 inset;
+    }
+  }
+
+  .nav-header-text-shadow {
+    text-shadow: 0px 4px 4px rgba(109, 108, 108, 0.7);
+  }
+
+  .fade-in {
+    animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
 
   @keyframes fade-in {

@@ -21,7 +21,7 @@ export const Landing = () => {
           <div className="relative w-3/4 flex flex-col">
             <div className="flex flex-grow flex-shrink-0" />
             <img
-              src="https://drive.google.com/thumbnail?id=1OV-f56TL_iepUijlchbT7e1bljWrYpBH&sz=w1280"
+              src="https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/landing/headshot-X3q0Z0wgBCUiONuXNpP45N3s0TQDMN.png"
               alt="rai barnard headshot image"
               className="z-10 relative object-cover"
             />
@@ -33,8 +33,8 @@ export const Landing = () => {
         </div>
         {/* Bottom semi circles */}
         <div className="absolute flex bottom-0 w-1/2 justify-between">
-          <div className="landing-page-semicircle" />
-          <div className="landing-page-semicircle" />
+          <div className="w-2/5 rounded-t-full aspect-[2] gradient-semi-circle" />
+          <div className="w-2/5 rounded-t-full aspect-[2] gradient-semi-circle" />
         </div>
       </div>
     </ScreenContainer>

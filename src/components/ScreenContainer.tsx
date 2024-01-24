@@ -14,7 +14,7 @@ export const ScreenContainer = ({
   return (
     <div
       className={clsx(
-        "flex-grow fade-in",
+        "flex grow fade-in",
         { "pt-[16.5rem]": headerPadding },
         className
       )}

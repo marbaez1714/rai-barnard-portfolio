@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const NavFooter = () => {
   return (
-    <footer className="fade-in py-8 mt-20">
+    <footer className="fade-in py-8">
       <div className="px-40 relative">
         <div className="grow mx-auto max-w-app flex items-center justify-between pt-8 pb-10 z-50 relative">
           <Link to="/" className="font-fugaz text-3xl text-dark-green mr-16">

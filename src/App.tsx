@@ -1,5 +1,15 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { About, Contact, Landing, ProjectsLanding, Root } from "./screens";
+import {
+  About,
+  Contact,
+  Landing,
+  ProjectsLanding,
+  Root,
+  Projects,
+  TheScheduler,
+  CoLiving,
+  PepesYMitos,
+} from "./screens";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +19,20 @@ const router = createBrowserRouter([
       { path: "/", element: <Landing /> },
       {
         path: "/projects",
-        children: [{ element: <ProjectsLanding />, index: true }],
+        children: [
+          {
+            element: <ProjectsLanding />,
+            index: true,
+          },
+          {
+            element: <Projects />,
+            children: [
+              { path: "the_scheduler", element: <TheScheduler /> },
+              { path: "Pepes_y_Mitos", element: <PepesYMitos /> },
+              { path: "Co_Living", element: <CoLiving /> },
+            ],
+          },
+        ],
       },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },

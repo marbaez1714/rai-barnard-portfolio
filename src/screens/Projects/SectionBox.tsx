@@ -10,9 +10,11 @@ export const SectionBox = ({ children, listItems }: SectionBoxProps) => {
         <section className="max-w-xl flex flex-col gap-6 mx-auto text-white text-xl">
           {children && <p>{children}</p>}
           {listItems && (
-            <ul className="pl-6 gap-4 flex flex-col list-item-marker">
+            <ul className="pl-6 gap-4 flex flex-col list-image-circle">
               {listItems.map((item, idx) => (
-                <li key={`section-${idx}`}>{item}</li>
+                <li key={`section-${idx}`} className="pl-2">
+                  {item}
+                </li>
               ))}
             </ul>
           )}

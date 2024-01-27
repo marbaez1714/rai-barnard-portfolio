@@ -26,20 +26,6 @@
 }
 
 @layer utilities {
-  .preserve-3d {
-    transform-style: preserve-3d;
-  }
-
-  .translate-back {
-    transform: translateZ(-10px);
-  }
-
-  .gradient-dark-grey {
-    background: linear-gradient(180deg, #c0bebe 0%, #858484 100%);
-    box-shadow: 0px 11.482px 11.482px 0px #d2d1d1 inset,
-      0px -11.482px 11.482px 0px #7b7a7a inset;
-  }
-
   .gradient-semi-circle {
     background: linear-gradient(180deg, #c6c5c5 0%, #878787 100%);
     box-shadow: 0px 26.4px 52.8px 0px rgba(34, 34, 34, 0.33),
@@ -53,29 +39,6 @@
       0px -34.551px 34.551px 0px #b8b8b8 inset;
   }
 
-  .gradient-green {
-    background: linear-gradient(
-      180deg,
-      rgba(60, 150, 117, 0.9) 0%,
-      rgba(36, 91, 71, 0.9) 100%
-    );
-    box-shadow: 0px 13.009px 13.009px 0px #409e7c inset,
-      0px -13.009px 13.009px 0px #215240 inset;
-  }
-
-  .gradient-link {
-    background: linear-gradient(180deg, #81f7cc 0%, #5fb697 100%);
-    box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.26),
-      0px 7.647px 7.647px 0px #86ffd4 inset,
-      0px -7.647px 7.647px 0px #5aac8f inset;
-    &:hover {
-      background: linear-gradient(180deg, #60b898 0%, #80f5cb 100%);
-      box-shadow: 0px 23.733px 47.467px 0px rgba(23, 44, 36, 0.24),
-        0px 7.384px 7.384px 0px #85fed2 inset,
-        0px -7.384px 7.384px 0px #5caf91 inset;
-    }
-  }
-
   .nav-header-text-shadow {
     text-shadow: 0px 4px 4px rgba(109, 108, 108, 0.7);
   }
@@ -84,18 +47,32 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
-  .list-item-marker {
-    @apply list-image-[url(/list-circle.svg)];
-    li{
-      @apply pl-2
-    }
-    li::marker {
-      @apply h-4;
-    }
+  .fade-in {
+    animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
 
-  .fade-in {
-    animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  .gradient-transition {
+    @apply relative transition-all;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      @apply absolute transition-all opacity-0 inset-0;
+      z-index: -1;
+      content: "";
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::before {
+        @apply opacity-100;
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
   }
 
   @keyframes fade-in {

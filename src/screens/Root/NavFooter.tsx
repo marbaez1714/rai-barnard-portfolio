@@ -6,7 +6,7 @@ export const NavFooter = () => {
       <div className="px-40 relative">
         <div className="grow mx-auto max-w-app flex items-center justify-between pt-8 pb-10 z-50 relative">
           <div className="mr-16 flex flex-col">
-            <Link to="/" className="font-fugaz text-3xl text-dark-green">
+            <Link to="/" className="font-fugaz text-3xl text-dark-green w-max">
               Rai Barnard Design
             </Link>
             <p className="text-xl">Copyright &copy; Rai Barnard Design 2024</p>

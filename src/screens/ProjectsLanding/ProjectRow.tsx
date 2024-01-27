@@ -39,7 +39,7 @@ export const ProjectRow = ({
           ))}
         </div>
       </div>
-      <div className="w-1/3">
+      <div className="w-[45%]">
         <Link
           to={to}
           relative="path"

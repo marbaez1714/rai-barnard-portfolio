@@ -9,8 +9,9 @@ export default {
       "light-grey": "#ABABAB",
       black: "#201A23",
       "dark-grey": "#4F4F4F",
-      "light-green": "#73DBB5",
+      "light-green": "#379085",
       "dark-green": "#255B4A",
+      "light-neutral": "#F5EBE0",
     },
     extend: {
       fontFamily: {

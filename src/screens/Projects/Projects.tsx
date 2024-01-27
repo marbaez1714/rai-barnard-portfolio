@@ -27,8 +27,7 @@ const INFO_MAP: Record<
   },
   Pepes_y_Mitos: {
     title: "Pepe's y Mito's",
-    details:
-      "Nestled in the Northeast corner of Deep Ellum, Pepe's y Mito's has served their iconic “Mex-Tex” dishes for nearly 30 years. What started as a small family business has grown into a local gem featured on national television for  Guy Fieri's “Diners, Drive-Ins, and Dives” (DDD). 5 years after the launch of their initial website, it was time for a redesign that highlighted the legacy and quality of the beloved restaurant.",
+    details: `Nestled in the Northeast corner of Deep Ellum, Pepe's y Mito's has served their iconic "Mex-Tex" dishes for nearly 30 years. What started as a small family business has grown into a local gem featured on national television for  Guy Fieri's "Diners, Drive-Ins, and Dives" (DDD). 5 years after the launch of their initial website, it was time for a redesign that highlighted the legacy and quality of the beloved restaurant.`,
     keywords: [
       "Mobile responsive",
       "Nationally recognized",
@@ -64,10 +63,10 @@ export const Projects = () => {
           <Link
             to={projectInfo.backLink.to}
             relative="route"
-            className="flex gap-4 items-center text-dark-grey h-20"
+            className="flex gap-4 items-center text-black px-2 py-4 h-max mt-3 transition-all opacity-75 hover:opacity-100 hover:font-bold"
           >
-            <img src={ChevronLeft} className="h-10 aspect-square" />
-            <span className="w-40 text-center">
+            <img src={ChevronLeft} className="h-5 aspect-square" />
+            <span className="w-32 text-center">
               {projectInfo.backLink.title}
             </span>
           </Link>
@@ -80,8 +79,8 @@ export const Projects = () => {
             {/* keywords */}
             <ul className="flex text-center items-center divide-x divide-black font-bold">
               {projectInfo.keywords.map((keyword) => (
-                <li className="px-6 py-2" key={keyword}>
-                  <h2>{keyword}</h2>
+                <li className="px-6 py-2 first:pl-0 last:pr-0" key={keyword}>
+                  <p>{keyword}</p>
                 </li>
               ))}
             </ul>
@@ -89,12 +88,12 @@ export const Projects = () => {
           {/* forward link */}
           <Link
             to={projectInfo.forwardLink.to}
-            className="flex gap-4 items-center text-dark-grey h-20"
+            className="flex gap-4 items-center px-2 text-black py-4 h-max mt-3 transition-all opacity-75 hover:opacity-100 hover:font-bold"
           >
-            <span className="w-40 text-center">
+            <span className="w-32 text-center">
               {projectInfo.forwardLink.title}
             </span>
-            <img src={ChevronRight} className="h-10 aspect-square" />
+            <img src={ChevronRight} className="h-5 aspect-square" />
           </Link>
         </div>
       </div>

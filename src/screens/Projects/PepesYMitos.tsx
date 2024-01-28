@@ -1,5 +1,7 @@
+import { BeforeAfter } from "./BeforeAfter";
 import { LessonsLearned } from "./LessonsLearned";
 import { SectionBox } from "./SectionBox";
+import { SectionTitle } from "./SectionTitle";
 
 export const PepesYMitos = () => {
   return (
@@ -34,81 +36,152 @@ export const PepesYMitos = () => {
           </li>
         </ul>
       </div>
-
-      {/* line break */}
       <hr />
 
       {/* Finding the Style */}
-      <SectionBox
-        listItems={[
-          "Generated a complete color palette, based on the new logo.",
-          "Formalized a set of fonts, including header fonts based on the print menu and more legible body fonts.",
-          "Created basic button styles and states, thinking ahead to the digital menu and landing page.",
-        ]}
-      />
+      <div>
+        <SectionTitle title="Finding the Style" />
+        <img
+          src="https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/finding-the-style-gcwWGtgvOMn0sK1QcNxbmholsfAgqH.png"
+          alt="Pepe's y Mito's style guide"
+        />
+      </div>
 
-      {/* line break */}
+      <SectionBox>
+        <ul>
+          <li>Generated a complete color palette, based on the new logo.</li>
+          <li>
+            Formalized a set of fonts, including header fonts based on the print
+            menu and more legible body fonts.
+          </li>
+          <li>
+            Created basic button styles and states, thinking ahead to the
+            digital menu and landing page.
+          </li>
+        </ul>
+      </SectionBox>
       <hr />
 
-      {/* Sticking the landing */}
-      <SectionBox
-        listItems={[
-          "Immediately familiarize the user with the new branding with the logo and graphics in the hero.",
-          "Provide clear guidance to the user in the hero section with a single CTA.",
-          "Give users a glimpse of the restaurant's highlights (featured dishes from Diners, Drive-Ins, and Dives).",
-          "Slight adjustments to scale and layout for mobile make it harmonious with the desktop version.",
+      {/* sticking the landing */}
+      <BeforeAfter
+        title="Sticking the Landing"
+        beforeImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/sticking-the-landing-before-YvDDVwqnn2VwpMQO0AZP6tiUsU4jlo.png",
+            alt: "Pepe's y Mito's landing page before redesign",
+          },
+        ]}
+        afterImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/sticking-the-landing-after-desktop-qggUgbivB7nXBuDmQkFNxPDZg8NneM.png",
+            alt: "Pepe's y Mito's landing page after redesign - desktop",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/sticking-the-landing-after-mobile-jwOSy4vIQ5UVSCqAltkdppKeYuWBt1.png",
+            alt: "Pepe's y Mito's landing page after redesign - mobile",
+            className: "max-h-64 object-contain",
+          },
         ]}
       />
-      <SectionBox
-        listItems={[
-          "A collage of images breaks up the screen while still giving a complete idea of the business.",
-          "Contact information in the footer nudges user towards events/catering without distracting from the primary CTA.",
-          "Adjusted collage to a carousel for mobile- uses the full screen width, prioritizes simplicity and accessibility.",
-        ]}
+      <SectionBox>
+        <ul>
+          <li>
+            Immediately familiarize the user with the new branding with the logo
+            and graphics in the hero.
+          </li>
+          <li>
+            Provide clear guidance to the user in the hero section with a single
+            CTA.
+          </li>
+          <li>
+            Give users a glimpse of the restaurant's highlights (featured dishes
+            from Diners, Drive-Ins, and Dives).
+          </li>
+          <li>
+            Slight adjustments to scale and layout for mobile make it harmonious
+            with the desktop version.
+          </li>
+        </ul>
+      </SectionBox>
+      <img
+        src="https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/sticking-the-landing-catering-SqDMtex7Fit8Dx8Sgm9a6x336cM7ZP.png"
+        alt="Pepe's y Mito's catering page"
       />
-
-      {/* line break */}
+      <img
+        className="max-w-72 mx-auto"
+        src="https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/sticking-the-landing-mobile-iEV1Nq4VkVTYw9Zz6D2YDAf5mzMcCB.png"
+        alt="Pepe's y Mito's mobile screen"
+      />
+      <SectionBox>
+        <ul>
+          <li>
+            A collage of images breaks up the screen while still giving a
+            complete idea of the business.
+          </li>
+          <li>
+            Contact information in the footer nudges user towards
+            events/catering without distracting from the primary CTA.
+          </li>
+          <li>
+            Adjusted collage to a carousel for mobile- uses the full screen
+            width, prioritizes simplicity and accessibility.
+          </li>
+        </ul>
+      </SectionBox>
       <hr />
 
-      {/* Simplicity is key */}
-      <SectionBox
-        listItems={[
-          "Got rid of dropdown sections to avoid multiple scroll bars in one screen.",
-          "User can see all sections at once and clearly identify which section they're currently viewing.",
-          "Switching the position of the Guy Fieri icon to the right of menu items allows for smooth text alignment.",
-          "Changing menu background and text colors to help the Fieri icon further stand out.",
+      {/* Simplicity is Key */}
+      <BeforeAfter
+        title="Simplicity is Key"
+        beforeImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/simplicity-before-1-lK8g4vGHVBY3V5oRCgTr1oqUoMclyM.png",
+            alt: "Pepe's y Mito's menu page before redesign - example 1",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/simplicity-before-2-YqIOBsCPPIMv0Am8PPXBXMnl2vxCJM.png",
+            alt: "Pepe's y Mito,'s menu page before redesign - example 2",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/simplicity-before-3-gu4nGGFvMcRANLE5IJ40e0kUGl83ws.png",
+            alt: "Pepe's y Mito's menu page before redesign - example 3",
+          },
+        ]}
+        afterImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/simplicity-after-desktop-U7npy7N3s19zov11HmWFc8yUF7DCPH.png",
+            alt: "Pepe's y Mito's menu page after redesign - desktop",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/simplicity-after-mobile-lF5eEvvHO2zux61oPrRQQuds4bMv7c.png",
+            alt: "Pepe's y Mito's menu page after redesign - mobile",
+            className: "max-h-64 object-contain",
+          },
         ]}
       />
-
-      {/* line break */}
+      <SectionBox>
+        <ul>
+          <li>
+            Got rid of dropdown sections to avoid multiple scroll bars in one
+            screen.
+          </li>
+          <li>
+            User can see all sections at once and clearly identify which section
+            they're currently viewing
+          </li>
+          <li>
+            Switching the position of the Guy Fieri icon to the right of menu
+            items allows for smooth text alignment
+          </li>
+          <li>
+            Changing menu background and text colors to help the Fieri icon
+            further stand out.
+          </li>
+        </ul>
+      </SectionBox>
       <hr />
 
-      {/* Rounding it out */}
-      <SectionBox
-        listItems={[
-          'A similar structure to its landing page section helps draw the eye towards the main difference - the "Contact Us" CTA.',
-          "Nearly full-screen images force the user to focus on the visuals of the physical restaurant.",
-          "Note: as a new feature to the business, this page will be updated with more information about catering packages as they are released by the owners.",
-        ]}
-      />
-      <SectionBox
-        listItems={[
-          "Triangles in the background break up the screen and frame the main content.",
-          "A narrower text box makes it easier and faster to read.",
-          "Stronger visual balance is achieved by matching the height of the text and video.",
-          "The video player is still a reasonable size, and users can easily switch to full screen, if desired.",
-        ]}
-      />
-      <SectionBox
-        listItems={[
-          "Stronger font hierarchy makes it easier to distinguish and read lines of text.",
-          "Triangles in the background help frame the page contents.",
-          "Again, a narrower layout reduces extra eye movement - all the text and the map are visible at a glance.",
-        ]}
-      />
-
-      {/* line break */}
-      <hr />
+      {/* rolling it out */}
 
       {/* Lessons learned */}
       <LessonsLearned>

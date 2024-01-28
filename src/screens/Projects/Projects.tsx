@@ -107,7 +107,7 @@ export const Projects = () => {
 
       {/* banner */}
       <div className="py-8 bg-dark-green w-full">
-        <p className="text-white max-w-xl mx-auto fade-in">
+        <p className="text-white max-w-xl mx-auto fade-in text-xl leading-normal">
           {projectInfo.banner}
         </p>
       </div>

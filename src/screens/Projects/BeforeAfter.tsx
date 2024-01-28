@@ -2,8 +2,8 @@ import { SectionTitle } from "./SectionTitle";
 
 interface SectionTitleProps {
   title?: string;
-  beforeImages: { src: string; alt: string }[];
-  afterImages: { src: string; alt: string }[];
+  beforeImages: { src: string; alt: string; className?: string }[];
+  afterImages: { src: string; alt: string; className?: string }[];
 }
 
 export const BeforeAfter = ({

@@ -1,7 +1,6 @@
 import { SectionBox } from "./SectionBox";
 import { BeforeAfter } from "./BeforeAfter";
 import { LessonsLearned } from "./LessonsLearned";
-import { SectionTitle } from "./SectionTitle";
 
 export const TheScheduler = () => {
   return (

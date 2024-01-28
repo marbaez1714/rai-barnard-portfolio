@@ -34,48 +34,9 @@ export const CoLiving = () => {
       <hr />
 
       {/* Building the style */}
-      <SectionBox
-        listItems={[
-          "Warm-toned colors complement the warm, personable spirit of the product.",
-          "Low saturation suggests comfort and calm in a living space.",
-          "A sufficiently diverse set of fonts covers uses from landing page hero sections to labels within message threads.",
-        ]}
-      />
 
       {/* line break */}
       <hr />
-
-      {/* Easy onboarding */}
-      <SectionBox
-        listItems={[
-          "Button/card-based screens minimize effort for user inputs.",
-          "Progress bar along the top helps users feel how quickly they are moving through the process.",
-          "Back arrows offer forgiveness of user error with inputs.",
-          "Skip option is inconspicuous. Effort to find the button outweighs the effort to just select an option and move on.",
-          "The input requiring the most effort (uploading proof of ID) is the last step.",
-        ]}
-      />
-
-      {/* line break */}
-      <hr />
-
-      {/* Encouraging Engagement */}
-      <SectionBox
-        listItems={[
-          "Engagement between new residents is prioritized on the feed. Community engagement will be required to create a space that fits the needs of its members.",
-          "Users can connect with business owners personally. The businesses selected are more likely to reflect the interests of our residents.",
-          "Animated modal displays progress towards logistical goals required to make their ideal community come to life.",
-        ]}
-      />
-
-      <SectionBox
-        listItems={[
-          "Once a community is established, users can easily keep track of social and management announcements.",
-          '"Add to Calendar" option allows us to reach users about important happenings without them being on the website.',
-          "Informal community discussion and outreach is held through a message board that operates similar to Facebook posts or X threads.",
-          "Users can save posts or threads, creating more convenience with communication and encouraging deeper discussion.",
-        ]}
-      />
 
       {/* line break */}
       <hr />

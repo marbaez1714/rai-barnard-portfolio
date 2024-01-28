@@ -1,5 +1,7 @@
+import { SectionTitle } from "./SectionTitle";
+
 interface SectionTitleProps {
-  title: string;
+  title?: string;
   beforeImages: { src: string; alt: string }[];
   afterImages: { src: string; alt: string }[];
 }
@@ -12,7 +14,7 @@ export const BeforeAfter = ({
   return (
     <section className="text-center">
       {/* title */}
-      <h2 className="text-3xl font-bold text-dark-green mb-16">{title}</h2>
+      {title && <SectionTitle title={title} />}
       {/* images */}
       <div className="flex gap-6 uppercase text-2xl">
         {/* before */}

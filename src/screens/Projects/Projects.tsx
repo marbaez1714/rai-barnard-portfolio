@@ -3,20 +3,24 @@ import { ScreenContainer } from "../../components";
 import ChevronLeft from "/chevron-left.svg";
 import ChevronRight from "/chevron-right.svg";
 import { ProjectTitle } from "./ProjectTitle";
-import { ProjectBanner } from "./ProjectBanner";
 
 const INFO_MAP = {
   the_scheduler: {
     backLink: { title: "Co Living", to: "Co_Living" },
     forwardLink: { title: "Pepe's y Mito's", to: "Pepes_y_Mitos" },
+    banner:
+      "In early 2023 I became acquainted with a DFW-based, family-run tile company. Hundreds of jobs and contractors are all managed by the company's owner. After growing the business over several years, he became so successful that it was nearly impossible for the owner to keep track of all the jobs using commercial software. He commissioned a custom web-based app to help manage all the company's jobs and employees, the_scheduler.",
   },
   Pepes_y_Mitos: {
     backLink: { title: "the_scheduler", to: "the_scheduler" },
     forwardLink: { title: "Co Living", to: "Co_Living" },
+    banner: `Nestled in the Northeast corner of Deep Ellum, Pepe's y Mito's has served their iconic "Mex-Tex" dishes for nearly 30 years. What started as a small family business has grown into a local gem featured on national television for Guy Fieri's "Diners, Drive-Ins, and Dives" (DDD). 5 years after the launch of their initial website, it was time for a redesign that highlighted the legacy and quality of the beloved restaurant.`,
   },
   Co_Living: {
     backLink: { title: "Pepe's y Mito's", to: "Pepes_y_Mitos" },
     forwardLink: { title: "the_scheduler", to: "the_scheduler" },
+    banner:
+      "In Spring of 2023 I participated in Dialexa EDU, a unique educational program at a growing tech consulting firm. I worked alongside college students and fellow career-switchers with mentorship from designers, engineers, and managers of Dialexa, an IBM Company. In just 7 weeks we researched, designed, and demoed a conceptual web-based product that sought to connect DFW residents and transplants to sustainable, community- and future-focused work and living solutions.",
   },
 };
 
@@ -72,6 +76,7 @@ export const Projects = () => {
               ]}
             />
           )}
+
           {currentProject === "Co_Living" && (
             <ProjectTitle
               title="Co Living"
@@ -102,42 +107,9 @@ export const Projects = () => {
 
       {/* banner */}
       <div className="py-8 bg-dark-green w-full">
-        {currentProject === "the_scheduler" && (
-          <ProjectBanner>
-            In early 2023 I became acquainted with a DFW-based, family-run tile
-            company. Hundreds of jobs and contractors are all managed by the
-            company's owner. After growing the business over several years, he
-            became so successful that it was nearly impossible for the owner to
-            keep track of all the jobs using commercial software. He
-            commissioned a custom web-based app to help manage all the company's
-            jobs and employees, the_scheduler.
-          </ProjectBanner>
-        )}
-
-        {currentProject === "Pepes_y_Mitos" && (
-          <ProjectBanner>
-            Nestled in the Northeast corner of Deep Ellum, Pepe's y Mito's has
-            served their iconic "Mex-Tex" dishes for nearly 30 years. What
-            started as a small family business has grown into a local gem
-            featured on national television for Guy Fieri's "Diners, Drive-Ins,
-            and Dives" (DDD). 5 years after the launch of their initial website,
-            it was time for a redesign that highlighted the legacy and quality
-            of the beloved restaurant.
-          </ProjectBanner>
-        )}
-
-        {currentProject === "Co_Living" && (
-          <ProjectBanner>
-            In Spring of 2023 I participated in Dialexa EDU, a unique
-            educational program at a growing tech consulting firm. I worked
-            alongside college students and fellow career-switchers with
-            mentorship from designers, engineers, and managers of Dialexa, an
-            IBM Company. In just 7 weeks we researched, designed, and demoed a
-            conceptual web-based product that sought to connect DFW residents
-            and transplants to sustainable, community- and future-focused work
-            and living solutions.
-          </ProjectBanner>
-        )}
+        <p className="text-white max-w-xl mx-auto fade-in">
+          {projectInfo.banner}
+        </p>
       </div>
 
       {/* content */}

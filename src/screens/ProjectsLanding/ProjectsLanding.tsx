@@ -13,12 +13,12 @@ export const ProjectsLanding = () => {
           "Internal tooling",
         ]}
         images={[
-          // {
-          //   src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/scheduler-example-1-PqKRAGRanHClmJQt0eWGwrZWdUCJVF.png",
-          //   alt: "the_scheduler example 1",
-          // },
           {
-            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/scheduler-example-2-ZCbzkNbbJn7C9vp5Uwuh0JGxmqvfd9.png",
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/the-scheduler-example-1-P0mcZC1UHQRIIdnP9UOxDCiB2T4ZaJ.png",
+            alt: "the_scheduler example 1",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/the-scheduler-example-2-9OeP6cjTVKEqkThVb6oaMuiVZYYlan.png",
             alt: "the_scheduler example 2",
           },
         ]}

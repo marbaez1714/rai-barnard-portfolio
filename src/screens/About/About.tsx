@@ -2,10 +2,10 @@ import { LinkButton, ScreenContainer } from "../../components";
 
 export const About = () => {
   return (
-    <ScreenContainer className="px-40">
-      <div className="max-w-app mx-auto w-full flex">
-        <div className="basis-3/5 flex flex-col gap-12 items-center">
-          <p className="text-xl">
+    <ScreenContainer className="px-40 pb-20">
+      <div className="max-w-app mx-auto w-full flex items-center justify-between gap-6">
+        <div className="flex flex-col gap-12 items-center max-w-[40rem]">
+          <p className="text-xl leading-[normal]">
             As a UX/UI designer, I bring a unique blend of creativity and
             analytical thinking to every project. With a B.S. in Biology and a
             B.A. in Visual & Performing Arts from UT Dallas, I have a diverse
@@ -29,9 +29,20 @@ export const About = () => {
             website, an app, or a marketing materials, my goal is to create a
             seamless and enjoyable user experience.
           </p>
-          <LinkButton className="text-xl" target="_blank" to="https://www.linkedin.com/in/rai-k-barnard/">Let's connect on my LinkedIn!</LinkButton>
+          <LinkButton
+            className="text-xl"
+            target="_blank"
+            to="https://www.linkedin.com/in/rai-k-barnard/"
+          >
+            Let's connect on my LinkedIn!
+          </LinkButton>
         </div>
-        <div className="basis-2/5" />
+        <div className="max-w-[30rem]">
+          <img
+            src="https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/about/about-r9XkGzVcD4s4FCuBinEfag29GTW1bB.png"
+            alt="rai barnard and examples of their work"
+          />
+        </div>
       </div>
     </ScreenContainer>
   );

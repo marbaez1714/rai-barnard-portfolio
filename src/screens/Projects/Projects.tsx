@@ -40,7 +40,11 @@ export const Projects = () => {
             relative="route"
             className="flex gap-4 items-center text-black px-2 py-4 h-max mt-3 transition-all opacity-70 hover:opacity-100 font-bold"
           >
-            <img src={ChevronLeft} className="h-5 aspect-square" />
+            <img
+              src={ChevronLeft}
+              className="h-5 aspect-square"
+              alt="left chevron"
+            />
             <span className="w-32 text-center">
               {projectInfo.backLink.title}
             </span>
@@ -87,7 +91,11 @@ export const Projects = () => {
             <span className="w-32 text-center">
               {projectInfo.forwardLink.title}
             </span>
-            <img src={ChevronRight} className="h-5 aspect-square" />
+            <img
+              src={ChevronRight}
+              className="h-5 aspect-square"
+              alt="right chevron"
+            />
           </Link>
         </div>
       </div>

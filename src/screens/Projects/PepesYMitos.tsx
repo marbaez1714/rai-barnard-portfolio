@@ -181,7 +181,113 @@ export const PepesYMitos = () => {
       </SectionBox>
       <hr />
 
-      {/* rolling it out */}
+      {/* rounding it out */}
+      <BeforeAfter
+        title="Rounding it Out"
+        beforeImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/hosting-before.png",
+            alt: "Pepe's y Mito's hosting before",
+          },
+        ]}
+        afterImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/hosting-after-desktop.png",
+            alt: "Pepe's y Mito's hosting after - desktop",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/hosting-after-mobile.png",
+            alt: "Pepe's y Mito's hosting after - mobile",
+            className: "max-h-64 object-contain",
+          },
+        ]}
+      />
+      <SectionBox>
+        <ul>
+          <li>
+            A similar structure to its landing page section helps draw the eye
+            towards the main difference - the “Contact Us” CTA.
+          </li>
+          <li>
+            Nearly full-screen images force the user to focus on the visuals of
+            the physical restaurant.
+          </li>
+          <li>
+            Note: as a new feature to the business, this page will be updated
+            with more information about catering packages as they are released
+            by the owners.
+          </li>
+        </ul>
+      </SectionBox>
+      <BeforeAfter
+        beforeImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/about-before.png",
+            alt: "Pepe's y Mito's about before",
+          },
+        ]}
+        afterImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/about-after-desktop.png",
+            alt: "Pepe's y Mito's about after - desktop",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/about-after-mobile.png",
+            alt: "Pepe's y Mito's about after - mobile",
+            className: "max-h-64 object-contain",
+          },
+        ]}
+      />
+      <SectionBox>
+        <ul>
+          <li>
+            Triangles in the background break up the screen and frame the main
+            content.
+          </li>
+          <li>A narrower text box makes it easier and faster to read.</li>
+          <li>
+            Stronger visual balance is achieved by matching the height of the
+            text and video.
+          </li>
+          <li>
+            The video player is still a reasonable size, and users can easily
+            switch to full screen, if desired.
+          </li>
+        </ul>
+      </SectionBox>
+      <BeforeAfter
+        beforeImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/details-before.png",
+            alt: "Pepe's y Mito's details page before",
+          },
+        ]}
+        afterImages={[
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/details-after-desktop.png",
+            alt: "Pepe's y Mito's details page after - desktop",
+          },
+          {
+            src: "https://d2lukm3a4tlyvgrz.public.blob.vercel-storage.com/projects/Pepe's%20y%20Mito's/details-after-mobile.png",
+            alt: "Pepe's y Mito's details page after - mobile",
+            className: "max-h-64 object-contain",
+          },
+        ]}
+      />
+      <SectionBox>
+        <ul>
+          <li>
+            Stronger font hierarchy makes it easier to distinguish and read
+            lines of text.
+          </li>
+          <li>Triangles in the background help frame the page contents.</li>
+          <li>
+            Again, a narrower layout reduces extra eye movement - all the text
+            and the map are visible at a glance.
+          </li>
+        </ul>
+      </SectionBox>
+      <hr />
 
       {/* Lessons learned */}
       <LessonsLearned>

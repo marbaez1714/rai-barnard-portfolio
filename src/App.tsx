@@ -10,7 +10,13 @@ import {
   CoLiving,
   PepesYMitos,
 } from "./screens";
+import { init as emailJsInit } from "@emailjs/browser";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
+// email js
+emailJsInit(import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY);
+
+// router
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,7 +47,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <GoogleReCaptchaProvider
+      reCaptchaKey={import.meta.env.VITE_EMAIL_RE_CAPTCHA_SITE_KEY}
+    >
+      <RouterProvider router={router} />
+    </GoogleReCaptchaProvider>
+  );
 }
 
 export default App;

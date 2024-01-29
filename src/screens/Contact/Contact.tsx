@@ -41,7 +41,6 @@ export const Contact = () => {
 
     try {
       const captcha = await executeRecaptcha();
-      console.log(captcha);
       const { status } = await emailJsSend(
         import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
         import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,

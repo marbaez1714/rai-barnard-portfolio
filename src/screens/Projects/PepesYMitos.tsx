@@ -8,14 +8,17 @@ export const PepesYMitos = () => {
     <div className="project-container">
       {/* description */}
       <SectionBox>
-        The original website rarely mentioned their feature on DDD or their new
-        event/catering options . The menu page was subdivided in an unusual way
-        that generated multiple scroll bars, making it confusing to navigate.
-        <br /> <br /> On the business side, the owners received numerous
-        complaints about expensive and limited parking (an infamous aspect of
-        Deep Ellum). And, on top of it all, the website didn't align with the
-        recent company rebranding.
-        <br /> <br /> With all this in mind, I set my goals for the redesign:
+        <p>
+          The original website rarely mentioned their feature on DDD or their
+          new event/catering options . The menu page was subdivided in an
+          unusual way that generated multiple scroll bars, making it confusing
+          to navigate.
+          <br /> <br /> On the business side, the owners received numerous
+          complaints about expensive and limited parking (an infamous aspect of
+          Deep Ellum). And, on top of it all, the website didn't align with the
+          recent company rebranding.
+          <br /> <br /> With all this in mind, I set my goals for the redesign:
+        </p>
       </SectionBox>
 
       {/* details */}

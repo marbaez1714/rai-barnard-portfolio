@@ -5,7 +5,7 @@ export const About = () => {
     <ScreenContainer className="px-40 pb-20">
       <div className="max-w-app mx-auto w-full flex items-center justify-between gap-6">
         <div className="flex flex-col gap-12 items-center max-w-[40rem]">
-          <p className="text-xl leading-[normal]">
+          <p className="text-xl leading-normal">
             As a UX/UI designer, I bring a unique blend of creativity and
             analytical thinking to every project. With a B.S. in Biology and a
             B.A. in Visual & Performing Arts from UT Dallas, I have a diverse

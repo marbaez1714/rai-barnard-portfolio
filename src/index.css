@@ -76,7 +76,7 @@
   }
 
   .project-section-box {
-    @apply text-white text-xl;
+    @apply text-white text-xl leading-normal;
     ul {
       @apply pl-6 gap-4 flex flex-col list-image-circle;
       li {

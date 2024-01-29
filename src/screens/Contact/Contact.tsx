@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ScreenContainer } from "../../components";
 import { send as emailJsSend } from "@emailjs/browser";
-import { GoogleReCaptcha, useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export const Contact = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();

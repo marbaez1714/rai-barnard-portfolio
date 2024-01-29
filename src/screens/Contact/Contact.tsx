@@ -87,6 +87,7 @@ export const Contact = () => {
                 id="name-input"
                 type="text"
                 name="contact_name"
+                value={contactName}
                 onChange={(e) => handleInputChange("name", e.target.value)}
                 required
               />
@@ -99,6 +100,7 @@ export const Contact = () => {
                 id="company-input"
                 type="text"
                 name="contact_company"
+                value={contactCompany}
                 onChange={(e) => handleInputChange("company", e.target.value)}
               />
             </div>
@@ -111,6 +113,7 @@ export const Contact = () => {
                 type="email"
                 name="contact_email"
                 className="w-full"
+                value={contactEmail}
                 onChange={(e) => handleInputChange("email", e.target.value)}
                 required
               />
@@ -125,6 +128,7 @@ export const Contact = () => {
                 name="contact_message"
                 rows={6}
                 required
+                value={contactMessage}
                 onChange={(e) => handleInputChange("message", e.target.value)}
               />
             </div>

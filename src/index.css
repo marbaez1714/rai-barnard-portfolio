@@ -98,30 +98,4 @@
       opacity: 1;
     }
   }
-
-  .fade-text-out {
-    animation: fade-text-out 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-  .fade-text-in {
-    animation: fade-text-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-
-  @keyframes fade-text-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fade-text-out {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-    }
-  }
 }

@@ -12,6 +12,7 @@ export default {
       "light-green": "#379085",
       "dark-green": "#255B4A",
       "light-neutral": "#F5EBE0",
+      error: "#8C0202",
     },
     extend: {
       fontFamily: {

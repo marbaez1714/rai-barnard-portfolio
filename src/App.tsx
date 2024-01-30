@@ -9,6 +9,7 @@ import {
   TheScheduler,
   CoLiving,
   PepesYMitos,
+  NotFound,
 } from "./screens";
 import { init as emailJsInit } from "@emailjs/browser";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
       },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

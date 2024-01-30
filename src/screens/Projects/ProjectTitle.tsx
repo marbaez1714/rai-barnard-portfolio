@@ -7,7 +7,7 @@ export const ProjectTitle = ({ title, keywords }: ProjectTitleProps) => {
   return (
     <div className="flex flex-col gap-8 items-center fade-in">
       {/* title */}
-      <h1 className="font-bold text-5xl py-4 project-header-text-shadow fade-text-in">
+      <h1 className="font-bold text-5xl py-4 project-header-text-shadow fade-in">
         {title}
       </h1>
       {/* keywords */}
